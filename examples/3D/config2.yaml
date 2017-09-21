@@ -1,0 +1,36 @@
+binning:
+  binsz: 0.02
+  proj: 'TAN'
+  coordsys: 'CEL'
+  nxpix: 500
+  nypix: 300
+  enumbins: 10
+
+pointing:
+  ra: 83.6333
+  dec: 22.0144
+  livetime: 50 hour
+
+selection:
+  offset_fov: 2
+  emin: 0.05
+  emax: 50
+  ROI: 5 deg
+
+logging:
+  working_dir: .
+
+model:
+  use_psf: False
+  source: ‘pulsar’
+  spectrum: pl
+  pivot_energy: 1
+  prefactor: 2.83e-3
+  index: 1.96
+  #cutoff: 0.04
+  template: Sphere2D
+  ra: 83.6333
+  dec: 22.0144
+  rad: 0.50
+  #rin: 0.33
+  #width: 0.2
