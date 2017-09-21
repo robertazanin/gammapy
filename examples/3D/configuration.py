@@ -52,6 +52,18 @@ def get_model_gammapy(config):
     )
 
 
+ source_model1= CombinedModel3D(
+            spatial_model=spatial_model1,
+            spectral_model=spectral_model1,
+            )
+source_model2= CombinedModel3D(
+            spatial_model=spatial_model2,
+            spectral_model=spectral_model2,
+            )
+
+return source_model1+source_model2
+
+
 def make_ref_cube(config):
     WCS_SPEC = {
         'nxpix': config['binning']['nxpix'],
